@@ -3,6 +3,16 @@
 <head>
     <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async>
     </script>
+    <script>
+
+        Kakao.init(cd1ae943e2df129bfed675eb96a65f35);
+        
+        function shareKatalk() {
+        Kakao.Link.sendScrap({
+            requestUrl: location.href
+        });
+        };
+        </script>
     <meta charset="UTF-8">
     <meta name="google-site-verification" content="BsMSSt9GG69uKH43Cfii-ib6oSkS5u2RcegUDFdBuJA" />
     <meta name="naver-site-verification" content="9026e21a7fb728f3fcbbd07214bc8b2872168676" />
@@ -10,6 +20,17 @@
     <title>에브리띵의 가성비 중고폰 비교표</title>
     <script src="https://ads-partners.coupang.com/g.js"></script>
     <script data-ad-client="ca-pub-4973537494905596" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.1.0/kakao.min.js"
+  integrity="sha384-dpu02ieKC6NUeKFoGMOKz6102CLEWi9+5RQjWSV0ikYSFFd8M3Wp2reIcquJOemx" crossorigin="anonymous"></script>
+<script>
+  Kakao.init('cd1ae943e2df129bfed675eb96a65f35'); // 사용하려는 앱의 JavaScript 키 입력
+</script>
+<script>
+    Kakao.Share.createScrapButton({
+      container: '#kakaotalk-sharing-btn',
+      requestUrl: 'https://developers.kakao.com',
+    });
+  </script>
     <style>
     @font-face {
         font-family: 'Maplestory Bold';
@@ -58,24 +79,25 @@
   z-index: 999;
 }
 
-.top-btn::before, .myWebSite-btn::before {
+.youtube-btn::before, .kakaotalk-btn::before,.top-btn::before, .myWebSite-btn::before {
    width: 100%;
    height: 100%;
    opacity: 1;
    border-radius: 50%;
-   font-size: 1.15em;
-   font-family: 'Font Awesome 5 Pro';
+   font-size: 2em;
+   font-family: 'Font Awesome 5 Pro','Font Awesome 5 Brands','Font Awesome 5 Free';
 	 /*플로팅 버튼 아이콘 색상 수정O*/
 	 color: #b67700;
 }
 
+
 /*플로팅 버튼 스타일*/
-.move-top, .move-myWebSite {
+.move-youtube, .share-kakaotalk, .move-top, .move-myWebSite {
   float: left;
   display: flex;
   position: relative;
-  width: 32px;
-  height: 32px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   cursor: pointer;
   justify-content: center;
@@ -84,12 +106,19 @@
   /*사용자 설정 파트*/	
   font-weight: 700;
   background-color: #00000000;
-  border: 2px solid #b67700;
+  border: 4px solid #b67700;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
 }
 
 /*플로팅 버튼 아이콘 FontAwesome 사용자 설정*/
+
+.youtube-btn::before {
+	    content: '\f167';
+}
+.kakaotalk-btn::before {
+        content: '\f064'
+}
 .top-btn::before {
 	  content: '\f34d';
 }
@@ -545,13 +574,21 @@
         </tr>
         </tbody>
     </table>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/CNoYUsJM3-w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     <div class="floating-button">
         <span class="move-myWebSite">
-           <a class="myWebSite-btn" href="https://edding.kr/"></a>
+            <a class="myWebSite-btn" href="https://edding.kr/"></a>
+         </span>
+        <span class="move-youtube">
+           <a class="youtube-btn" href="https://www.youtube.com/channel/UCJELy6gvjAGj5qYKhRNASvg"></a>
         </span>
-        <span class="move-top">
-            <a class="top-btn" href=#></a>
+        <span class="share-kakaotalk">
+            <a class="kakaotalk-btn" href="javascript:;"></a>
         </span>
+
+         <span class="move-top">
+             <a class="top-btn" href=#></a>
+         </span>
  
      </div>
 </body>

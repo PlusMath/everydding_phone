@@ -8,7 +8,18 @@
     <meta name="naver-site-verification" content="9026e21a7fb728f3fcbbd07214bc8b2872168676" />
     <title>에브리띵의 정보공유 홈페이지</title>
     <script src="https://ads-partners.coupang.com/g.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" />
     <script data-ad-client="ca-pub-4973537494905596" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+
+        Kakao.init(cd1ae943e2df129bfed675eb96a65f35);
+        
+        function shareKatalk() {
+        Kakao.Link.sendScrap({
+            requestUrl: location.href
+        });
+        };
+        </script>
     <style>
     @font-face {
         font-family: 'Maplestory Bold';
@@ -24,8 +35,64 @@
     }
     div{
         text-align: center;
+        vertical-align: middle;
     }
-    </style>
+    .floating-button {
+  display: flex;
+  position: fixed;
+  right: 10px;
+  bottom: 15px;
+  z-index: 999;
+}
+
+.youtube-btn::before, .kakaotalk-btn::before,.top-btn::before, .myWebSite-btn::before {
+   width: 100%;
+   height: 100%;
+   opacity: 1;
+   border-radius: 50%;
+   font-size: 2em;
+   font-family: 'Font Awesome 5 Pro','Font Awesome 5 Brands','Font Awesome 5 Free';
+	 /*플로팅 버튼 아이콘 색상 수정O*/
+	 color: #b67700;
+}
+
+
+/*플로팅 버튼 스타일*/
+.move-youtube, .share-kakaotalk, .move-top, .move-myWebSite {
+  float: left;
+  display: flex;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+  /*사용자 설정 파트*/	
+  font-weight: 700;
+  background-color: #00000000;
+  border: 4px solid #b67700;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+/*플로팅 버튼 아이콘 FontAwesome 사용자 설정*/
+
+.youtube-btn::before {
+	    content: '\f167';
+}
+.kakaotalk-btn::before {
+        content: '\f064'
+}
+.top-btn::before {
+	  content: '\f34d';
+}
+.myWebSite-btn::before {
+	content: '\f015'
+}
+</style>
+    
 </head>
 <body leftmargin='0' topmargin='0' marginwidth='0' barginheight='0' >
     <h1>에브리띵의 정보공유 홈페이지</h1>
@@ -33,8 +100,23 @@
     <a href="1.html"><img src="phone_1.jpg" alt="1번영상" width="384" height="216" loading="lazy"></a>
     <a href="2.html"><img src="phone30_2.jpg" alt="2번영상" width="384" height="216" loading="lazy"></a>
     </div>
-    
 
+    <div class="floating-button">
+        <span class="move-myWebSite">
+            <a class="myWebSite-btn" href="https://edding.kr/"></a>
+         </span>
+        <span class="move-youtube">
+           <a class="youtube-btn" href="https://www.youtube.com/channel/UCJELy6gvjAGj5qYKhRNASvg"></a>
+        </span>
+        <span class="share-kakaotalk">
+            <a class="kakaotalk-btn" href="javascript:;"></a>
+        </span>
+
+         <span class="move-top">
+             <a class="top-btn" href=#></a>
+         </span>
+ 
+     </div>
 
 </body>
 </html>
