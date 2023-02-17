@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="google-site-verification" content="BsMSSt9GG69uKH43Cfii-ib6oSkS5u2RcegUDFdBuJA" />
     <meta name="naver-site-verification" content="9026e21a7fb728f3fcbbd07214bc8b2872168676" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" />
     <title>에브리띵의 가성비 중고폰 비교표</title>
     <script src="https://ads-partners.coupang.com/g.js"></script>
     <script data-ad-client="ca-pub-4973537494905596" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -49,6 +50,52 @@
     }
     h2 {font-size:35px;
     }
+    .floating-button {
+  display: flex;
+  position: fixed;
+  right: 10px;
+  bottom: 15px;
+  z-index: 999;
+}
+
+.top-btn::before, .myWebSite-btn::before {
+   width: 100%;
+   height: 100%;
+   opacity: 1;
+   border-radius: 50%;
+   font-size: 1.15em;
+   font-family: 'Font Awesome 5 Pro';
+	 /*플로팅 버튼 아이콘 색상 수정O*/
+	 color: #b67700;
+}
+
+/*플로팅 버튼 스타일*/
+.move-top, .move-myWebSite {
+  float: left;
+  display: flex;
+  position: relative;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+  /*사용자 설정 파트*/	
+  font-weight: 700;
+  background-color: #00000000;
+  border: 2px solid #b67700;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+/*플로팅 버튼 아이콘 FontAwesome 사용자 설정*/
+.top-btn::before {
+	  content: '\f34d';
+}
+.myWebSite-btn::before {
+	content: '\f015'
+}
     </style>
 </head>
 <body leftmargin='0' topmargin='0' marginwidth='0' barginheight='0' >
@@ -115,7 +162,7 @@
         <td>22~27</td>
         <td></td>
     </tr>
-    <tr bgcolor ="#eee">
+    <tr bgcolor ="#f3f16b">
         <td>삼성</td>
         <td>갤럭시 S10E</td>
         <td>IP 68</td>
@@ -377,7 +424,7 @@
             <td>맥세이프</td>
     
         </tr>
-        <tr bgcolor ="#eee">
+        <tr bgcolor ="#f3f16b">
             <td>애플</td>
             <td>아이폰 SE 2세대</td>
             <td>IP 68</td>
@@ -498,6 +545,15 @@
         </tr>
         </tbody>
     </table>
-
+    <div class="floating-button">
+        <span class="move-myWebSite">
+           <a class="myWebSite-btn" href="https://edding.kr/"></a>
+        </span>
+        <span class="move-top">
+            <a class="top-btn" href=#></a>
+        </span>
+ 
+     </div>
+</body>
 
 </html>

@@ -9,6 +9,7 @@
     <title>에브리띵의 알뜰통신사 무제한 요금제</title>
     <script src="https://ads-partners.coupang.com/g.js"></script>
     <script data-ad-client="ca-pub-4973537494905596" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" />
     <style>
     @font-face {
         font-family: 'Maplestory Bold';
@@ -68,7 +69,52 @@
         font-weight: normal;
         font-family: 'Maplestory Bold', sans-serif;
     }
+    .floating-button {
+  display: flex;
+  position: fixed;
+  right: 10px;
+  bottom: 15px;
+  z-index: 999;
+}
 
+.top-btn::before, .myWebSite-btn::before {
+   width: 100%;
+   height: 100%;
+   opacity: 1;
+   border-radius: 50%;
+   font-size: 1.15em;
+   font-family: 'Font Awesome 5 Pro';
+	 /*플로팅 버튼 아이콘 색상 수정O*/
+	 color: #b67700;
+}
+
+/*플로팅 버튼 스타일*/
+.move-top, .move-myWebSite {
+  float: left;
+  display: flex;
+  position: relative;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+  /*사용자 설정 파트*/	
+  font-weight: 700;
+  background-color: #00000000;
+  border: 2px solid #b67700;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+/*플로팅 버튼 아이콘 FontAwesome 사용자 설정*/
+.top-btn::before {
+	  content: '\f34d';
+}
+.myWebSite-btn::before {
+	content: '\f015'
+}
     </style>
 </head>
 <body leftmargin='0' topmargin='0' marginwidth='0' barginheight='0' >
@@ -101,7 +147,7 @@
         <td>33000</td>
         <td>평생</td>
         <td>LG</td>
-        <td></td>
+        <td><a href="https://www.uplusumobile.com/">홈페이지</a></td>
 
     </tr>
     <tr bgcolor ="#eee">
@@ -112,7 +158,7 @@
         <td>17500</td>
         <td>평생</td>
         <td>KT</td>
-        <td></td>
+        <td rowspan="2"><a href="https://www.ktmmobile.com/">홈페이지</a></td>
 
     </tr>
     <tr bgcolor ="#eee">
@@ -122,7 +168,7 @@
         <td>33900</td>
         <td>평생</td>
         <td>KT</td>
-        <td></td>
+        
 
     </tr>
     <tr bgcolor ="#eee">
@@ -132,7 +178,7 @@
         <td>17500</td>
         <td>평생</td>
         <td>LG</td>
-        <td></td>
+        <td><a href="https://direct.lghellovision.net/">홈페이지</a></td>
 
     </tr>
     <tr bgcolor ="#eee">
@@ -142,7 +188,7 @@
         <td>22000</td>
         <td>평생</td>
         <td>SK</td>
-        <td></td>
+        <td rowspan="2"><a href="https://www.sk7mobile.com/">홈페이지</a></td>
 
     </tr>
     <tr bgcolor ="#eee">
@@ -152,7 +198,7 @@
         <td>38500</td>
         <td>평생</td>
         <td>SK</td>
-        <td></td>
+        
 
     </tr>
     <tr bgcolor ="#f3f16b">
@@ -163,7 +209,7 @@
         <td>18700</td>
         <td>7개월</td>
         <td>KT</td>
-        <td></td>
+        <td><a href="https://www.freet.co.kr/">홈페이지</a></td>
 
     </tr>
     <tr bgcolor ="#eee">
@@ -173,7 +219,7 @@
         <td>17500</td>
         <td>평생</td>
         <td>KT</td>
-        <td></td>
+        <td rowspan="2"><a href="https://www.skylife.co.kr/">홈페이지</a></td>
 
     </tr>
     <tr bgcolor ="#eee">
@@ -183,7 +229,7 @@
         <td>33900</td>
         <td>평생</td>
         <td>KT</td>
-        <td></td>
+
 
     </tr>
     <tr bgcolor ="#eee">
@@ -193,7 +239,7 @@
         <td>20900</td>
         <td>6개월</td>
         <td>LG</td>
-        <td></td>
+        <td><a href="https://www.eyagi.co.kr/">홈페이지</a></td>
 
     </tr>
     <tr bgcolor ="#eee">
@@ -203,7 +249,7 @@
         <td>15400</td>
         <td>12개월</td>
         <td>LG</td>
-        <td></td>
+        <td rowspan="3"><a href="http://www.s1mobile.co.kr/">홈페이지</a></td>
 
     </tr>
     <tr bgcolor ="#eee">
@@ -213,7 +259,7 @@
         <td>31900</td>
         <td>12개월</td>
         <td>LG</td>
-        <td></td>
+        
 
     </tr>
     <tr bgcolor ="#eee">
@@ -223,7 +269,7 @@
         <td>23100</td>
         <td>12개월</td>
         <td>KT</td>
-        <td></td>
+        
 
     </tr>
     <tr bgcolor ="#eee">
@@ -233,7 +279,7 @@
         <td>19800</td>
         <td>7개월</td>
         <td>LG</td>
-        <td></td>
+        <td><a href="https://eyes.co.kr/">홈페이지</a></td>
 
     </tr>
     <tr bgcolor ="#eee">
@@ -243,7 +289,7 @@
         <td>17600</td>
         <td>평생</td>
         <td>LG</td>
-        <td></td>
+        <td rowspan="3"><a href="https://www.snowman.co.kr/">홈페이지</a></td>
 
     </tr>
     <tr bgcolor ="#eee">
@@ -253,7 +299,7 @@
         <td>18600</td>
         <td>평생</td>
         <td>LG</td>
-        <td></td>
+        
 
     </tr>
     <tr bgcolor ="#eee">
@@ -263,7 +309,7 @@
         <td>33000</td>
         <td>평생</td>
         <td>LG</td>
-        <td></td>
+        
 
     </tr>
 
@@ -274,7 +320,7 @@
         <td>30000</td>
         <td>7개월</td>
         <td>LG</td>
-        <td></td>
+        <td><a href="https://www.mobing.co.kr/">홈페이지</a></td>
 
     </tr>
 
@@ -285,7 +331,7 @@
         <td>17600</td>
         <td>7개월</td>
         <td>LG</td>
-        <td></td>
+        <td rowspan="2"><a href="https://www.tplusdirectmall.com/">홈페이지</a></td>
 
     </tr>
     <tr bgcolor ="#eee">
@@ -295,7 +341,7 @@
         <td>29700</td>
         <td>7개월</td>
         <td>LG</td>
-        <td></td>
+        
 
     </tr>
 
@@ -306,7 +352,7 @@
         <td>20900</td>
         <td>7개월</td>
         <td>KT</td>
-        <td></td>
+        <td><a href="https://www.egmobile.co.kr/">홈페이지</a></td>
 
     </tr>
     <tr bgcolor ="#eee">
@@ -316,7 +362,7 @@
         <td>23100</td>
         <td>7개월</td>
         <td>LG</td>
-        <td></td>
+        <td><a href="https://www.smartelmall.com/">홈페이지</a></td>
 
     </tr>
     <tr bgcolor ="#f3f16b">
@@ -326,7 +372,7 @@
         <td>17870</td>
         <td>6개월</td>
         <td>KT</td>
-        <td></td>
+        <td rowspan="2"><a href="https://www.pindirectshop.com/">홈페이지</a></td>
 
     </tr>
     <tr bgcolor ="#f3f16b">
@@ -336,7 +382,7 @@
         <td>19250</td>
         <td>6개월</td>
         <td>KT</td>
-        <td></td>
+        
 
     </tr>
 
@@ -345,6 +391,14 @@
     </table>
 
 
-
+    <div class="floating-button">
+        <span class="move-myWebSite">
+           <a class="myWebSite-btn" href="https://edding.kr/"></a>
+        </span>
+        <span class="move-top">
+            <a class="top-btn" href=#></a>
+        </span>
+ 
+     </div>
 </body>
 </html>
