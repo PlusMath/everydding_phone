@@ -31,6 +31,359 @@
     });
     };
     </script>
+
+    
+    <script>
+    
+        function sortTable_n(n) {
+                var table, rows, switching, o,x,y, shouldSwitch, dir, switchcount = 0;
+                    table = document.getElementById("first");
+                    switching = true;
+                    dir = "asc";
+    
+                while (switching) {
+                    switching = false;
+                    rows = table.getElementsByTagName("tr");
+    
+                for (o = 1; o < (rows.length - 1); o++) {
+                    shouldSwitch = false;
+                    x = rows[o].getElementsByTagName("td")[n];
+                    y = rows[o + 1].getElementsByTagName("td")[n];
+    
+                    if (dir == "asc") {
+                        if (Number(x.innerHTML) > Number(y.innerHTML)) {
+                            shouldSwitch = true;
+                            break;
+                        }
+                    } else if (dir == "desc") {
+                        if (Number(x.innerHTML) < Number(y.innerHTML)) {
+                            shouldSwitch = true;
+                            break;
+                        }
+    
+                    }
+                }
+                if (shouldSwitch) {
+                    rows[o].parentNode.insertBefore(rows[o + 1], rows[o]);
+                    switching = true;
+                    switchcount ++;
+                } else {
+                    if (switchcount == 0 && dir == "asc") {
+                        dir = "desc";
+                        switching = true;
+                    }
+                }
+                }
+            }
+
+    </script>
+        <script>
+    
+            function sortTable_n1(n) {
+                    var table, rows, switching, o,x,y, shouldSwitch, dir, switchcount = 0;
+                        table = document.getElementById("first_1");
+                        switching = true;
+                        dir = "asc";
+        
+                    while (switching) {
+                        switching = false;
+                        rows = table.getElementsByTagName("tr");
+        
+                    for (o = 1; o < (rows.length - 1); o++) {
+                        shouldSwitch = false;
+                        x = rows[o].getElementsByTagName("td")[n];
+                        y = rows[o + 1].getElementsByTagName("td")[n];
+        
+                        if (dir == "asc") {
+                            if (Number(x.innerHTML) > Number(y.innerHTML)) {
+                                shouldSwitch = true;
+                                break;
+                            }
+                        } else if (dir == "desc") {
+                            if (Number(x.innerHTML) < Number(y.innerHTML)) {
+                                shouldSwitch = true;
+                                break;
+                            }
+        
+                        }
+                    }
+                    if (shouldSwitch) {
+                        rows[o].parentNode.insertBefore(rows[o + 1], rows[o]);
+                        switching = true;
+                        switchcount ++;
+                    } else {
+                        if (switchcount == 0 && dir == "asc") {
+                            dir = "desc";
+                            switching = true;
+                        }
+                    }
+                    }
+                }
+    
+        </script>
+            <script>
+    
+                function sortTable_n2(n) {
+                        var table, rows, switching, o,x,y, shouldSwitch, dir, switchcount = 0;
+                            table = document.getElementById("first_2");
+                            switching = true;
+                            dir = "asc";
+            
+                        while (switching) {
+                            switching = false;
+                            rows = table.getElementsByTagName("tr");
+            
+                        for (o = 1; o < (rows.length - 1); o++) {
+                            shouldSwitch = false;
+                            x = rows[o].getElementsByTagName("td")[n];
+                            y = rows[o + 1].getElementsByTagName("td")[n];
+            
+                            if (dir == "asc") {
+                                if (Number(x.innerHTML) > Number(y.innerHTML)) {
+                                    shouldSwitch = true;
+                                    break;
+                                }
+                            } else if (dir == "desc") {
+                                if (Number(x.innerHTML) < Number(y.innerHTML)) {
+                                    shouldSwitch = true;
+                                    break;
+                                }
+            
+                            }
+                        }
+                        if (shouldSwitch) {
+                            rows[o].parentNode.insertBefore(rows[o + 1], rows[o]);
+                            switching = true;
+                            switchcount ++;
+                        } else {
+                            if (switchcount == 0 && dir == "asc") {
+                                dir = "desc";
+                                switching = true;
+                            }
+                        }
+                        }
+                    }
+        
+            </script>
+                <script>
+    
+                    function sortTable_n3(n) {
+                            var table, rows, switching, o,x,y, shouldSwitch, dir, switchcount = 0;
+                                table = document.getElementById("first_3");
+                                switching = true;
+                                dir = "asc";
+                
+                            while (switching) {
+                                switching = false;
+                                rows = table.getElementsByTagName("tr");
+                
+                            for (o = 1; o < (rows.length - 1); o++) {
+                                shouldSwitch = false;
+                                x = rows[o].getElementsByTagName("td")[n];
+                                y = rows[o + 1].getElementsByTagName("td")[n];
+                
+                                if (dir == "asc") {
+                                    if (Number(x.innerHTML) > Number(y.innerHTML)) {
+                                        shouldSwitch = true;
+                                        break;
+                                    }
+                                } else if (dir == "desc") {
+                                    if (Number(x.innerHTML) < Number(y.innerHTML)) {
+                                        shouldSwitch = true;
+                                        break;
+                                    }
+                
+                                }
+                            }
+                            if (shouldSwitch) {
+                                rows[o].parentNode.insertBefore(rows[o + 1], rows[o]);
+                                switching = true;
+                                switchcount ++;
+                            } else {
+                                if (switchcount == 0 && dir == "asc") {
+                                    dir = "desc";
+                                    switching = true;
+                                }
+                            }
+                            }
+                        }
+            
+                </script>
+    
+        <script>
+    
+            function sortTable(n) {
+                    var table, rows, switching, o,x,y, shouldSwitch, dir, switchcount = 0;
+                        table = document.getElementById("first");
+                        switching = true;
+                        dir = "asc";
+        
+                    while (switching) {
+                        switching = false;
+                        rows = table.getElementsByTagName("TR");
+        
+                    for (o = 1; o < (rows.length - 1); o++) {
+                        shouldSwitch = false;
+                        x = rows[o].getElementsByTagName("TD")[n];
+                        y = rows[o + 1].getElementsByTagName("TD")[n];
+        
+                        if (dir == "asc") {
+                            if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                                shouldSwitch = true;
+                                break;
+                            }
+                        } else if (dir == "desc") {
+                            if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                                shouldSwitch = true;
+                                break;
+                            }
+        
+                        }
+                    }
+                    if (shouldSwitch) {
+                        rows[o].parentNode.insertBefore(rows[o + 1], rows[o]);
+                        switching = true;
+                        switchcount ++;
+                    } else {
+                        if (switchcount == 0 && dir == "asc") {
+                            dir = "desc";
+                            switching = true;
+                        }
+                    }
+                    }
+                }
+            </script>
+    <script>
+    
+        function sortTable_1(n) {
+                var table, rows, switching, o,x,y, shouldSwitch, dir, switchcount = 0;
+                    table = document.getElementById("first_1");
+                    switching = true;
+                    dir = "asc";
+    
+                while (switching) {
+                    switching = false;
+                    rows = table.getElementsByTagName("TR");
+    
+                for (o = 1; o < (rows.length - 1); o++) {
+                    shouldSwitch = false;
+                    x = rows[o].getElementsByTagName("TD")[n];
+                    y = rows[o + 1].getElementsByTagName("TD")[n];
+    
+                    if (dir == "asc") {
+                        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                            shouldSwitch = true;
+                            break;
+                        }
+                    } else if (dir == "desc") {
+                        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                            shouldSwitch = true;
+                            break;
+                        }
+    
+                    }
+                }
+                if (shouldSwitch) {
+                    rows[o].parentNode.insertBefore(rows[o + 1], rows[o]);
+                    switching = true;
+                    switchcount ++;
+                } else {
+                    if (switchcount == 0 && dir == "asc") {
+                        dir = "desc";
+                        switching = true;
+                    }
+                }
+                }
+            }
+        </script>
+        <script>
+        
+            function sortTable_2(n) {
+                    var table, rows, switching, o,x,y, shouldSwitch, dir, switchcount = 0;
+                        table = document.getElementById("first_2");
+                        switching = true;
+                        dir = "asc";
+        
+                    while (switching) {
+                        switching = false;
+                        rows = table.getElementsByTagName("TR");
+        
+                    for (o = 1; o < (rows.length - 1); o++) {
+                        shouldSwitch = false;
+                        x = rows[o].getElementsByTagName("TD")[n];
+                        y = rows[o + 1].getElementsByTagName("TD")[n];
+        
+                        if (dir == "asc") {
+                            if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                                shouldSwitch = true;
+                                break;
+                            }
+                        } else if (dir == "desc") {
+                            if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                                shouldSwitch = true;
+                                break;
+                            }
+        
+                        }
+                    }
+                    if (shouldSwitch) {
+                        rows[o].parentNode.insertBefore(rows[o + 1], rows[o]);
+                        switching = true;
+                        switchcount ++;
+                    } else {
+                        if (switchcount == 0 && dir == "asc") {
+                            dir = "desc";
+                            switching = true;
+                        }
+                    }
+                    }
+                }
+            </script>
+        <script>
+        
+        function sortTable_3(n) {
+                var table, rows, switching, o,x,y, shouldSwitch, dir, switchcount = 0;
+                    table = document.getElementById("first_3");
+                    switching = true;
+                    dir = "asc";
+    
+                while (switching) {
+                    switching = false;
+                    rows = table.getElementsByTagName("TR");
+    
+                for (o = 1; o < (rows.length - 1); o++) {
+                    shouldSwitch = false;
+                    x = rows[o].getElementsByTagName("TD")[n];
+                    y = rows[o + 1].getElementsByTagName("TD")[n];
+    
+                    if (dir == "asc") {
+                        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                            shouldSwitch = true;
+                            break;
+                        }
+                    } else if (dir == "desc") {
+                        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                            shouldSwitch = true;
+                            break;
+                        }
+    
+                    }
+                }
+                if (shouldSwitch) {
+                    rows[o].parentNode.insertBefore(rows[o + 1], rows[o]);
+                    switching = true;
+                    switchcount ++;
+                } else {
+                    if (switchcount == 0 && dir == "asc") {
+                        dir = "desc";
+                        switching = true;
+                    }
+                }
+                }
+            }
+        </script>
+
+
     <style>
         :root{
     --text-color: #f0f4f5;
@@ -171,7 +524,7 @@ body {
     font-family: 'Maplestory Bold', sans-serif;
     }
     .company1 {
-        width: 180px;
+        width: 140px;
 
     }
     .menu{
@@ -181,17 +534,27 @@ body {
         width: 200px;
 
     }
+    .data_1 {
+        width: 120px;
+
+    }
+    .call{
+        width: 70px;
+    }
     .etc{
         width: 120px;
     }
     .money{
-        width: 90px;
+        width: 120px;
     }
     .month{
-        width: 80px;
+        width: 100px;
+    }
+    .month_1{
+        width: 110px;
     }
     .company2{
-        width: 80px;
+        width: 70px;
     }
     .title_1{
         font-weight: normal;
@@ -210,6 +573,15 @@ body {
   bottom: 15px;
   z-index: 999;
 }
+    .white_1{
+        color: #CDFAD5;
+
+}
+.white_0{
+        color: #F6EDC3;
+
+}
+
 
 .youtube-btn::before, .kakaotalk-btn::before,.top-btn::before, .myWebSite-btn::before {
    width: 100%;
@@ -274,7 +646,7 @@ body {
 
         <ul class="navbar__menu">
             <li><a class = "nav_1" href="https://edding.kr">Home</a></li>
-            <li><a class = "nav_1" href="#0won">0원 요금제+7GB+1Mbps</a></li>
+            <li><a class = "nav_1" href="#0won">0원 요금제(1Mbps)</a></li>
             <li><a class = "nav_1" href="#11gb">11GB+3mbps</a></li>
             <li><a class = "nav_1" href="#5gb">매일 5GB+5mbps</a></li>
             <li><a class = "nav_1" href="#life">평생요금제</a></li>
@@ -289,126 +661,166 @@ body {
         </a>
     </nav>
 
-    <table border="0" width="1100" height="800" cellpadding="0" cellspacing="0" align="center">
-    <tr>
-        <td width="1000" align="center" >
-            <table class="type11"></center>
-            <h1 class = "title_1">에브리띵의 23년 11월 셋째주 알뜰통신사 요금제 총정리</h1>
-        </td>
-    </tr>       
-    <a name = "0won"><h2 class="title_2">1. 0원 요금제(1Mbps)</h2></a>
-    <thead>        
-    <tr>
-        <th class="company1">통신사</th>
-        <th class="menu" scope="cols">요금제명</th>
-        <th class="data" scope="cols">데이터/통화/문자</th>
-        <th class="money" scope="cols">금액(원)</th>
-        <th class="month" scope="cols">할인기간</th>
-        <th class="company2" scope="cols">통신망</th>
-        <th class="etc" scope="cols">비고</th>
-
-    </tr>
-    </thead>
-    <tbody>
-
-    <tr bgcolor ="#F6EDC3">
-        <td>KG모바일</td>
-        <td>[모빌카드 스페셜]통화,데이터 마음대로 7GB+</td>
-        <td>7GB+1Mbps</td>
-        <td>0원</td>
-        <td>4개월</td>
-        <td>LG</td>
-        <td><a href="https://www.kgmobile.co.kr/plan/28">링크</a></td>
-
-    <tr bgcolor ="#F6EDC3">
-        <td>KG모바일</td>
-        <td>[일반]통화,데이터 마음대로 7GB+</td>
-        <td>7GB+1Mbps</td>
-        <td>1100원</td>
-        <td>7개월</td>
-        <td>LG</td>
-        <td><a href="https://www.moyoplan.com/plans/18299">링크</a></td>
-</tr>  
-<tr bgcolor ="#EEEEEE">
-    <td>티플러스</td>
-    <td>티플 완전마음껏7G＋</td>
-    <td>7GB+1Mbps</td>
-    <td>1100원</td>
-    <td>4개월</td>
-    <td>LG</td>
-    <td><a href="https://www.tplusmobile.com/main/rate/plan_details?seq=E4A294ACDDE0464ADD9593205CE9E0CFAAFC6336D4CAEA5A4FEDC4E93619CABC31A284454608E0E0B954E276DDB294192C8341409C25486827E37456FB132FEB">링크</a></td>
-</tr>
-<tr bgcolor ="#EEEEEE">
-    <td>이지모바일</td>
-    <td>EG 데이터 7G</td>
-    <td>7GB+1Mbps</td>
-    <td>2200원</td>
-    <td>4개월</td>
-    <td>KT</td>
-    <td><a href="https://egmobile.co.kr/charge/view/SFBCYVdhcnkyWlJ4QldjckVTQ3Q0dz09">링크</a></td>
-</tr>     
-
-
-    <tr bgcolor ="#EEEEEE">
-        <td>모나</td>
-        <td>모나기본7G안심1</td>
-        <td>7GB+1Mbps</td>
-        <td>2200원</td>
-        <td>6개월</td>
-        <td>LG</td>
-        <td><a href="https://mobilemona.co.kr/view/plan/rate_detail.aspx?gdcd=LPZ0018421">링크</a></td>
-    </tr>
-    <tr bgcolor ="#EEEEEE">
-        <td>에르엘모바일</td>
-        <td>음성기본 7GB+ (밀리의서재)</td>
-        <td>7GB+1Mbps</td>
-        <td>3300원</td>
-        <td>4개월</td>
-        <td>KT</td>
-        <td><a href="https://www.erel.co.kr/soc/view/?code=PL237K292">밀리의서재<br>이용가능</a></td>
-    </tr>  
-
-    <tr bgcolor ="#EEEEEE">
-        <td>미니게이트</td>
-        <td>[모요only] 미니 LTE 7GB+_밀리의서재</td>
-        <td>7GB+1Mbps</td>
-        <td>3300원</td>
-        <td>4개월</td>
-        <td>KT</td>
-        <td><a href="https://www.moyoplan.com/plans/15901">모요 개통<br>밀리 이용가능</a></td>
-    </tr>
-    <tr bgcolor ="#EEEEEE">
-        <td>에르엘모바일</td>
-        <td>음성기본 10GB+</td>
-        <td>10GB+1Mbps</td>
-        <td>4400원</td>
-        <td>4개월</td>
-        <td>KT</td>
-        <td><a href="https://www.erel.co.kr/soc/view/?code=PL238O541">링크</a></td>
-    </tr>  
- 
-
-
-
-
-    </tbody>
-</table>
 <table border="0" width="1100" height="800" cellpadding="0" cellspacing="0" align="center">
     <tr>
-        <td width="1000" align="center" >
-            <table class="type11"></center>
+        <td width="1100" align="center" >
+            <table id = "first" class="type11"></center>
+                <h1 class = "title_1">에브리띵의 23년 11월 셋째주 알뜰통신사 요금제 총정리</h1>
+                <a name = "0won"><h2 class="title_2">1. 0원 요금제(1Mbps)</h2></a>
+                <thead>        
+                <tr>
+                    <th class="company1" style="cursor: pointer;" onclick="sortTable(0)">통신사</th>
+                    <th class="menu" scope="cols" style="cursor: pointer;" onclick="sortTable(1)">요금제명</th>
+                    <th class="data" scope="cols" style="cursor: pointer;" onclick="sortTable(2)">데이터/통화/문자</th>
+                    <th colspan="2" class="money" scope="cols" style="cursor: pointer;" onclick="sortTable_n(3)">금액(원)</th>
+                    <th colspan="2" class="month" scope="cols" style="cursor: pointer;" onclick="sortTable_n(5)">할인기간</th>
+                    <th class="company2" scope="cols" style="cursor: pointer;" onclick="sortTable(7)">통신망</th>
+                    <th class="etc" scope="cols" style="cursor: pointer;" onclick="sortTable(8)">비고</th>
+
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr bgcolor ="#F6EDC3">
+                    <td>KG모바일</td>
+                    <td>[모빌카드 스페셜]통화,데이터 마음대로 7GB+</td>
+                    <td>7GB+1Mbps</td>
+                    <td>0</td>
+                    <td>원</td>                    
+                    <td>4</td>
+                    <td>개월</td>
+                    <td>LG</td>
+                    <td><a href="https://www.kgmobile.co.kr/plan/28">링크</a></td>
+
+                <tr bgcolor ="#F6EDC3">
+                    <td>KG모바일</td>
+                    <td>[일반]통화,데이터 마음대로 7GB+</td>
+                    <td>7GB+1Mbps</td>
+                    <td>1100</td>
+                    <td>원</td>   
+                    <td>7</td>
+                    <td>개월</td>
+                    <td>LG</td>
+                    <td><a href="https://www.moyoplan.com/plans/18299">링크</a></td>
+                </tr>  
+                <tr bgcolor ="#EEEEEE">
+                    <td>티플러스</td>
+                    <td>티플 완전마음껏7G＋</td>
+                    <td>7GB+1Mbps</td>
+                    <td>1100</td>
+                    <td>원</td>   
+                    <td>4</td>
+                    <td>개월</td>
+                    <td>LG</td>
+                    <td><a href="https://www.tplusmobile.com/main/rate/plan_details?seq=E4A294ACDDE0464ADD9593205CE9E0CFAAFC6336D4CAEA5A4FEDC4E93619CABC31A284454608E0E0B954E276DDB294192C8341409C25486827E37456FB132FEB">링크</a></td>
+                </tr>
+                <tr bgcolor ="#EEEEEE">
+                    <td>이지모바일</td>
+                    <td>EG 데이터 7G</td>
+                    <td>7GB+1Mbps</td>
+                    <td>2200</td>
+                    <td>원</td>   
+                    <td>4</td>
+                    <td>개월</td>
+                    <td>KT</td>
+                    <td><a href="https://egmobile.co.kr/charge/view/SFBCYVdhcnkyWlJ4QldjckVTQ3Q0dz09">링크</a></td>
+                </tr>     
+
+
+                <tr bgcolor ="#EEEEEE">
+                    <td>모나</td>
+                    <td>모나기본7G안심1</td>
+                    <td>7GB+1Mbps</td>
+                    <td>2200</td>
+                    <td>원</td>   
+                    <td>6</td>
+                    <td>개월</td>
+                    <td>LG</td>
+                    <td><a href="https://mobilemona.co.kr/view/plan/rate_detail.aspx?gdcd=LPZ0018421">링크</a></td>
+                </tr>
+                <tr bgcolor ="#EEEEEE">
+                    <td>에르엘모바일</td>
+                    <td>음성기본 7GB+ (밀리의서재)</td>
+                    <td>7GB+1Mbps</td>
+                    <td>3300</td>
+                    <td>원</td>   
+                    <td>4</td>
+                    <td>개월</td>
+                    <td>KT</td>
+                    <td><a href="https://www.erel.co.kr/soc/view/?code=PL237K292">밀리의서재<br>이용가능</a></td>
+                </tr>  
+
+                <tr bgcolor ="#EEEEEE">
+                    <td>미니게이트</td>
+                    <td>[모요only] 미니 LTE 7GB+_밀리의서재</td>
+                    <td>7GB+1Mbps</td>
+                    <td>3300</td>
+                    <td>원</td>   
+                    <td>4</td>
+                    <td>개월</td>
+                    <td>KT</td>
+                    <td><a href="https://www.moyoplan.com/plans/15901">모요 개통<br>밀리 이용가능</a></td>
+                </tr>
+
+                <tr bgcolor ="#CDFAD5">
+                    <td>A모바일</td>
+                    <td>A 스페셜 4.5GB+ (평생)</td>
+                    <td>4.5GB+1Mbps</td>
+                    <td>8800</td>
+                    <td>원</td>   
+                    <td><font color="#CDFAD5">100</td>
+                    <td>평생</td>
+                    <td>LG</td>
+                    <td><a href="https://www.amobile.co.kr/plan/63066">링크</a></td>
+                </tr>
+                <tr bgcolor ="#CDFAD5">
+                    <td>스마텔</td>
+                    <td>웰컴프리미엄 7GB+</td>
+                    <td>7GB+1Mbps</td>
+                    <td>11000</td>
+                    <td>원</td>   
+                    <td>12</td>
+                    <td>개월</td>
+                    <td>SK</td>
+                    <td><a href="https://www.moyoplan.com/plans/18794">링크</a></td>
+                </tr>
+                <tr bgcolor ="#CDFAD5">
+                    <td>이지모바일</td>
+                    <td>12 오래쓰는 데이터 7G+1</td>
+                    <td>7GB+1Mbps</td>
+                    <td>11550</td>
+                    <td>원</td>   
+                    <td>12</td>
+                    <td>개월</td>
+                    <td>LG</td>
+                    <td><a href="https://www.egmobile.co.kr/charge/view/WFFJcHBCYzBmVnkrS3dxWFpsTDBhQT09">링크</a></td>
+                </tr>
+
+
+            
+
+
+
+
+                </tbody>
+            </table>
         </td>
-    </tr>     
-<a name = "11gb"><h2 class="title_2">2. 11GB+일2GB 요금제(3Mbps)</h2></a>
+    </tr>       
+
+    
+    <tr>
+        <td width="1000" align="center" >
+            <table id="first_1" class="type11"></center>
+                <a name = "11gb"><h2 class="title_2">2. 11GB+일2GB 요금제(3Mbps)</h2></a>
 <thead>        
 <tr>
-    <th class="company1">통신사</th>
-    <th class="menu" scope="cols">요금제명</th>
-    <th class="data" scope="cols">데이터/통화/문자</th>
-    <th class="money" scope="cols">금액(원)</th>
-    <th class="month" scope="cols">할인기간</th>
-    <th class="company2" scope="cols">통신망</th>
-    <th class="etc" scope="cols">비고</th>
+    <th class="company1" style="cursor: pointer;" onclick="sortTable_1(0)">통신사</th>
+    <th class="menu" scope="cols" style="cursor: pointer;" onclick="sortTable_1(1)">요금제명</th>
+    <th class="data" scope="cols" style="cursor: pointer;" onclick="sortTable_1(2)">데이터/통화/문자</th>
+    <th colspan="2" class="money" scope="cols" style="cursor: pointer;" onclick="sortTable_n1(3)">금액(원)</th>
+    <th colspan="2" class="month" scope="cols" style="cursor: pointer;" onclick="sortTable_n1(5)">할인기간</th>
+    <th class="company2" scope="cols" style="cursor: pointer;" onclick="sortTable_1(7)">통신망</th>
+    <th class="etc" scope="cols" style="cursor: pointer;" onclick="sortTable_1(8)">비고</th>
 
 </tr>
 </thead>
@@ -418,40 +830,49 @@ body {
         <td>티플러스</td>
         <td>티플 완전마음껏11G+</td>
         <td>11GB+일2GB+3Mbps</td>
-        <td>8800원</td>
-        <td>4개월</td>
+        <td>8800</td>
+        <td>원</td>
+        <td>4</td>
+        <td>개월</td>
         <td>LG</td>
         <td><a href="https://www.moyoplan.com/plans/18301">링크</a></td>
+    
+    </tr>
+    <tr bgcolor ="#F6EDC3">
+        <td>A모바일</td>
+        <td>A 스페셜 11GB+</td>
+        <td>11GB+일2GB+3Mbps</td>
+        <td>8800</td>
+        <td>원</td>
+        <td>4</td>
+        <td>개월</td>
+        <td>LG</td>
+        <td><a href="https://www.amobile.co.kr/plan/63174">링크</a></td>
     
     </tr>
     <tr bgcolor ="#F6EDC3">
         <td>미니게이트</td>
         <td>[모요only] 미니 LTE 11GB+밀리의서재</td>
         <td>11GB+일2GB+3Mbps</td>
-        <td>9790원</td>
-        <td>4개월</td>
+        <td>9790</td>
+        <td>원</td>
+        <td>4</td>
+        <td>개월</td>
         <td>KT</td>
         <td><a href="https://www.moyoplan.com/plans/18700">모요 개통<br>밀리 이용가능</a></td>
     
     </tr>
 
-    <tr bgcolor ="#EEEEEE">
-        <td>A모바일</td>
-        <td>A 스페셜 11GB+</td>
-        <td>11GB+일2GB+3Mbps</td>
-        <td>12100원</td>
-        <td>4개월</td>
-        <td>LG</td>
-        <td><a href="https://www.amobile.co.kr/plan/63162">링크</a></td>
-    
-    </tr>
+
 
     <tr bgcolor ="#EEEEEE">
         <td>KG모바일</td>
         <td>[모빌카드 스페셜]통화,데이터 마음대로 11GB+</td>
         <td>11GB+일2GB+3Mbps</td>
-        <td>13200원</td>
-        <td>4개월</td>
+        <td>13200</td>
+        <td>원</td>
+        <td>4</td>
+        <td>개월</td>
         <td>LG</td>
         <td><a href="https://www.kgmobile.co.kr/plan/27">링크</a></td>
     
@@ -460,8 +881,10 @@ body {
         <td>핀다이렉트</td>
         <td>핀다이렉트Z</td>
         <td>11GB+일2GB+3Mbps</td>
-        <td>13800원</td>
-        <td>4개월</td>
+        <td>13800</td>
+        <td>원</td>
+        <td>4</td>
+        <td>개월</td>
         <td>KT</td>
         <td><a href="https://www.pindirectshop.com/plan/DEALV2PINZ7">링크</a></td>
     
@@ -470,230 +893,582 @@ body {
         <td>아이즈모바일</td>
         <td>[K]무한11GB+ 밀리의서재</td>
         <td>11GB+일2GB+3Mbps</td>
-        <td>14300원</td>
-        <td>5개월</td>
+        <td>14300</td>
+        <td>원</td>
+        <td>5</td>
+        <td>개월</td>
         <td>KT</td>
         <td><a href="https://www.eyes.co.kr/payplan/info_view/277/C01/EVD0759">밀리의서재<br>이용가능</a></td>
     
     </tr>
-    <tr bgcolor ="#EEEEEE">
-        <td>에르엘모바일</td>
-        <td>음성 기본 11GB+일 2GB(네이버페이)</td>
+
+    <tr bgcolor ="#CDFAD5">
+        <td>인스모바일</td>
+        <td>[모요only] 인스 유심 스트롱 11GB+(12개월)</td>
         <td>11GB+일2GB+3Mbps</td>
-        <td>16500원</td>
-        <td>4개월</td>
-        <td>KT</td>
-        <td><a href="https://www.erel.co.kr/soc/view/?code=PL237K294">네이버페이<br>월 5000원</a></td>
+        <td>23600</td>
+        <td>원</td>
+        <td>12</td>
+        <td>개월</td>
+        <td>LG</td>
+        <td><a href="https://www.moyoplan.com/plans/18608">100일 약정<br>모요에서<br>개통가능</a></td>
     
     </tr>
-    <tr bgcolor ="#EEEEEE">
+    <tr bgcolor ="#CDFAD5">
         <td>이지모바일</td>
-        <td>EG 데이터 11G</td>
+        <td>12 오래쓰는 All 무제한</td>
         <td>11GB+일2GB+3Mbps</td>
-        <td>16500원</td>
-        <td>4개월</td>
-        <td>KT</td>
-        <td><a href="https://egmobile.co.kr/charge/view/UDBMRzlCQXdjL0FIY3ZqcTdMdzR5UT09">링크</a></td>
-    
-    </tr>
-
-    <tr bgcolor ="#EEEEEE">
-        <td>모나</td>
-        <td>모나데이터11G+일2G안심3</td>
-        <td>11GB+일2GB+3Mbps</td>
-        <td>16500원</td>
-        <td>6개월</td>
+        <td>25300</td>
+        <td>원</td>
+        <td>12</td>
+        <td>개월</td>
         <td>LG</td>
-        <td><a href="https://mobilemona.co.kr/view/plan/rate_detail.aspx?gdcd=LPZ0018437">링크</a></td>
+        <td><a href="https://www.egmobile.co.kr/charge/view/a1dweVkzTnJidS9xZFkwZmZqTHZZUT09"></a></td>
     
     </tr>
-    <tr bgcolor ="#EEEEEE">
-        <td>모빙</td>
-        <td>[S] 데이터 11GB+</td>
+    <tr bgcolor ="#CDFAD5">
+        <td>슈가모바일</td>
+        <td>[모요only]매니아 통화무제한 11GB+매일2GB+</td>
         <td>11GB+일2GB+3Mbps</td>
-        <td>17000원</td>
-        <td>7개월</td>
-        <td>SK</td>
-        <td><a href="https://www.mobing.co.kr/product/plan/view?planID=PC0LB00226">링크</a></td>
-
-    </tr>
-
-    <tr bgcolor ="#EEEEEE">
-        <td>KG모바일</td>
-        <td>[일반]통화,데이터 마음대로 11GB+</td>
-        <td>11GB+일2GB+3Mbps</td>
-        <td>17050원</td>
-        <td>7개월</td>
+        <td>25790</td>
+        <td>원</td>
+        <td>12</td>
+        <td>개월</td>
         <td>LG</td>
-        <td><a href="https://www.kgmobile.co.kr/plan/35">링크</a></td>
+        <td><a href="https://www.moyoplan.com/plans/11142"></a></td>
     
     </tr>
+   
 
 
 
 </tbody>
 </table>
-
-<table border="0" width="1100" height="800" cellpadding="0" cellspacing="0" align="center">
-    <tr>
-        <td width="1000" align="center" >
-            <table class="type11"></center>
         </td>
     </tr>     
-<a name = "5gb"><h2 class="title_2">3. 월100GB 이상 요금제(5Mbps)</h2></a>
-<thead>        
+
+    <tr>
+        <td width="1000" align="center" >
+            <table id="first_2" class="type11"></center>
+                <a name = "5gb"><h2 class="title_2">3. 월100GB 이상 요금제(5Mbps)</h2></a>
+                <thead>        
+                <tr>
+                    <th class="company1" style="cursor: pointer;" onclick="sortTable_2(0)">통신사</th>
+                    <th class="menu" scope="cols" style="cursor: pointer;" onclick="sortTable_2(1)">요금제명</th>
+                    <th class="data" scope="cols" style="cursor: pointer;" onclick="sortTable_2(2)">데이터/통화/문자</th>
+                    <th colspan="2" class="money" scope="cols" style="cursor: pointer;" onclick="sortTable_n2(3)">금액(원)</th>
+                    <th colspan="2" class="month" scope="cols" style="cursor: pointer;" onclick="sortTable_n2(5)">할인기간</th>
+                    <th class="company2" scope="cols" style="cursor: pointer;" onclick="sortTable_2(7)">통신망</th>
+                    <th class="etc" scope="cols" style="cursor: pointer;" onclick="sortTable_2(8)">비고</th>
+                
+                </tr>
+                </thead>
+                <tbody>
+                    <tr bgcolor ="#F6EDC3">
+                        <td>핀다이렉트</td>
+                        <td>핀다이렉트Z Max</td>
+                        <td>매일5GB+5Mbps</td>
+                        <td>18700</td>
+                        <td>원</td>
+                        <td>4</td>
+                        <td>개월</td>
+                        <td>KT</td>
+                        <td><a href="https://www.pindirectshop.com/plan/DEALV2ZMAX7">링크</a></td>
+                    
+                    </tr>
+                    <tr bgcolor ="#F6EDC3">
+                        <td>KG모바일</td>
+                        <td>[모빌카드 스페셜]통화,데이터 마음대로 Pro</td>
+                        <td>매일5GB+5Mbps</td>
+                        <td>19250</td>
+                        <td>원</td>
+                        <td>4</td>
+                        <td>개월</td>
+                        <td>LG</td>
+                        <td><a href="https://www.kgmobile.co.kr/plan/26">링크</a></td>
+                    
+                    </tr>
+                    <tr bgcolor ="#F6EDC3">
+                        <td>미니게이트</td>
+                        <td>[모요only] 미니 LTE 일 5GB+</td>
+                        <td>매일5GB+5Mbps</td>
+                        <td>19800</td>
+                        <td>원</td>
+                        <td>4</td>
+                        <td>개월</td>
+                        <td>KT</td>
+                        <td><a href="https://www.moyoplan.com/plans/15388">모요에서 <br>개통가능</a></td>
+                    
+                    </tr>
+                
+                    <tr bgcolor ="#EEEEEE">
+                        <td>이지모바일</td>
+                        <td>EG ON 비디오</td>
+                        <td>100GB+5Mbps</td>
+                        <td>21550</td>
+                        <td>원</td>
+                        <td>4</td>
+                        <td>개월</td>
+                        <td>KT</td>
+                        <td><a href="https://egmobile.co.kr/charge/view/em5NQWZ2Y3VTM052Wm15Ri8vTEcrZz09">링크</a></td>
+                    
+                    </tr>
+                    <tr bgcolor ="#EEEEEE">
+                        <td>아이즈모바일</td>
+                        <td>[K]무한100GB+ 밀리의서재</td>
+                        <td>100GB+5Mbps</td>
+                        <td>22000</td>
+                        <td>원</td>
+                        <td>4</td>
+                        <td>개월</td>
+                        <td>LG</td>
+                        <td><a href="https://www.eyes.co.kr/payplan/info_view/278/C01/EVD0759">링크</a></td>
+                    
+                    </tr>
+                    <tr bgcolor ="#EEEEEE">
+                        <td>모나</td>
+                        <td>모나데이터매일5G안심5</td>
+                        <td>매일5GB+5Mbps</td>
+                        <td>22000</td>
+                        <td>원</td>
+                        <td>6</td>
+                        <td>개월</td>
+                        <td>LG</td>
+                        <td><a href="https://mobilemona.co.kr/view/plan/rate_detail.aspx?gdcd=LPZ0018433">링크</a></td>
+                    
+                    </tr>
+                    <tr bgcolor ="#CDFAD5">
+                        <td>인스모바일</td>
+                        <td>[모요only] 인스 유심 스트롱 매일 5GB+(12개월)</td>
+                        <td>매일5GB+5Mbps</td>
+                        <td>31050</td>
+                        <td>원</td>
+                        <td>12</td>
+                        <td>개월</td>
+                        <td>LG</td>
+                        <td><a href="https://www.moyoplan.com/plans/18611">100일 약정<br>모요에서<br>개통가능</a></td>
+                    
+                    </tr>
+                    <tr bgcolor ="#CDFAD5">
+                        <td>이지모바일</td>
+                        <td>오래쓰는 ON 비디오</td>
+                        <td>100GB+5Mbps</td>
+                        <td>33870</td>
+                        <td>원</td>
+                        <td>12</td>
+                        <td>개월</td>
+                        <td>KT</td>
+                        <td><a href="https://www.egmobile.co.kr/charge/view/N0tNMHVqQWdDMzNWcXVEdnJiYkplUT09"></a></td>
+                    
+                    </tr>
+                    <tr bgcolor ="#CDFAD5">
+                        <td>이지모바일</td>
+                        <td>12 오래쓰는 All Free</td>
+                        <td>매일5GB+5Mbps</td>
+                        <td>33990</td>
+                        <td>원</td>
+                        <td>12</td>
+                        <td>개월</td>
+                        <td>LG</td>
+                        <td><a href="https://www.egmobile.co.kr/charge/view/WndmVmt2OXRwQXlXanBCaWRMbCtMdz09"></a></td>
+                    
+                    </tr>
+                
+                </tbody>
+                </table>
+        </td>
+    </tr>     
+
+    <td width="1100" align="center" >
+        <table id="first_3" class="type11"></center>
+            <a name = "life"><h2 class="title_2">4. 장기 요금제(12개월 이상)</h2></a>
+            <thead>        
+            <tr>
+                <th class="company1" style="cursor: pointer;" onclick="sortTable_3(0)">통신사</th>
+                <th class="menu" scope="cols" style="cursor: pointer;" onclick="sortTable_3(1)">요금제명</th>
+                <th  class="call" scope="cols" style="cursor: pointer;" onclick="sortTable_n3(2)">통화</th>
+                <th  class="call" scope="cols" style="cursor: pointer;" onclick="sortTable_n3(3)">문자</th>
+                <th colspan="2" class="data_1" scope="cols" style="cursor: pointer;" onclick="sortTable_n3(4)">데이터</th>
+                <th colspan="2" class="money" scope="cols" style="cursor: pointer;" onclick="sortTable_n3(6)">금액(원)</th>
+                <th colspan="2" class="month_1" scope="cols" style="cursor: pointer;" onclick="sortTable_n3(8)">할인기간</th>
+                <th class="company2" scope="cols" style="cursor: pointer;" onclick="sortTable_3(10)">통신망</th>
+                <th class="etc" scope="cols" style="cursor: pointer;" onclick="sortTable_3(11)">비고</th>
+            
+            </tr>
+            </thead>
+            <tbody>
+                <tr bgcolor ="#F6EDC3">
+                    <td>티플러스</td>
+                    <td>티플 가성비(300분/6GB)</td>
+                    <td>300</td>                     
+                    <td>300</td>
+                    <td>6</td>
+                    <td>GB</td>
+                    <td>100</td>
+                    <td>원</td>
+                    <td>12</td>
+                    <td>개월</td>
+                    <td>SK</td>
+                    <td><a href="https://tplusmobile.com/main/rate/plan_details?seq=D6FEF85FD8FA48BCDE75454044A8857B3FB496D3A647BCF0FA299F4DAD81AC717D294F80C9DFFAE4D761B7A20B0C6F271E25BFF056C79A10CF97BB17B721AF43">할인종료후 6000원</a></td>
+                
+                </tr>
+                <tr bgcolor ="#F6EDC3">
+                    <td>아이즈모바일</td>
+                    <td>[S]그란데(100분/6GB)</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>6</td>
+                    <td>GB</td>
+                    <td>550</td>
+                    <td>원</td>
+                    <td>12</td>
+                    <td>개월</td>
+                    <td>SK</td>
+                    <td><a href="https://www.eyes.co.kr/payplan/info_view/168/C01">링크</a></td>
+                
+                </tr>
+                <tr bgcolor ="#F6EDC3">
+                    <td>아이즈모바일</td>
+                    <td>아이즈우정(300분/5G)</td>
+                    <td>300</td>
+                    <td>100</td>
+                    <td>5</td>
+                    <td>GB</td>
+                    <td>550</td>
+                    <td>원</td>
+                    <td>12</td>
+                    <td>개월</td>
+                    <td>SK</td>
+                    <td><a href="https://www.eyes.co.kr/payplan/info_view/120/C01">링크</a></td>
+                
+                </tr>
+                <tr bgcolor ="#F6EDC3">
+                    <td>아이즈모바일</td>
+                    <td>[S]벤티(200분/7GB)</td>
+                    <td>200</td>
+                    <td>100</td>
+                    <td>7</td>
+                    <td>GB</td>
+                    <td>770</td>
+                    <td>원</td>
+                    <td>12</td>
+                    <td>개월</td>
+                    <td>SK</td>
+                    <td><a href="https://www.eyes.co.kr/payplan/info_view/171/C01">링크</a></td>
+                
+                </tr>
+                <tr bgcolor ="#F6EDC3">
+                    <td>티플러스</td>
+                    <td>티플 10GB(10GB/100분)</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>10</td>
+                    <td>GB</td>
+                    <td>990</td>
+                    <td>원</td>
+                    <td>12</td>
+                    <td>개월</td>
+                    <td>SK</td>
+                    <td><a href="https://tplusmobile.com/main/rate/plan_details?seq=7155CB9F6476F756C7491DD7A5CFA0E0030D670F126EFF3DD51569528B9010C93BB47D62CE963A98DD10DB4FD409A58F2702A27B716CBC594D0E3B9AB5A3FA35">링크</a></td>
+                
+                </tr>
+                <tr bgcolor ="#CDFAD5">
+                    <td>에르엘모바일</td>
+                    <td>음성60분500MB</td>
+                    <td>60</td>
+                    <td>50</td>
+                    <td>0.5</td>
+                    <td>GB</td>
+                    <td>1870</td>
+                    <td>원</td>
+                    <td class="white_1">100</td>
+                    <td>평생</td>
+                    <td>LG</td>
+                    <td><a href="https://www.erel.co.kr/soc/view?code=LPZ0018796">링크</a></td>
+                
+                </tr>
+                <tr bgcolor ="#CDFAD5">
+                    <td>KT 스카이라이프</td>
+                    <td>초슬림 500M/60분</td>
+                    <td>60</td>
+                    <td>50</td>
+                    <td>0.5</td>
+                    <td>GB</td>
+                    <td>1900</td>
+                    <td>원</td>
+                    <td class="white_1">100</td>
+                    <td>평생</td>
+                    <td>KT</td>
+                    <td><a href="https://www.moyoplan.com/plans/15625">링크</a></td>
+                
+                </tr>
+                <tr bgcolor ="#F6EDC3">
+                    <td>아이즈모바일</td>
+                    <td>[S]음성자유/5GB</td>
+                    <td class="white_0">1000</td>
+                    <td>100</td>
+                    <td>5</td>
+                    <td>GB</td>
+                    <td>1980</td>
+                    <td>원</td>
+                    <td>12</td>
+                    <td>개월</td>
+                    <td>SK</td>
+                    <td><a href="https://www.eyes.co.kr/payplan/info_view/348/C01">링크</a></td>
+                
+                </tr>
+                <tr bgcolor ="#CDFAD5">
+                    <td>티플러스</td>
+                    <td>우체국 티플음성200</td>
+                    <td>200</td>
+                    <td>200</td>
+                    <td>0.1</td>
+                    <td>GB</td>
+                    <td>2000</td>
+                    <td>원</td>
+                    <td class="white_1">100</td>
+                    <td>평생</td>
+                    <td>KT</td>
+                    <td><a href="https://www.tplusmobile.com/main/rate/plan_details?seq=23C27449FC44400BF44C39F76AC2D6DE74CE7B4283B3A5823FD75ED6D6D554CB6A9872515FA1511060EDAC93735420B57ECD25D4226356513ABA46A69400F2F5">링크</a></td>
+                
+                </tr>
+                <tr bgcolor ="#CDFAD5">
+                    <td>A 모바일</td>
+                    <td>A 갓성비 1GB/100분 (평생)</td>
+                    <td>100</td>
+                    <td>50</td>
+                    <td>1</td>
+                    <td>GB</td>
+                    <td>2090</td>
+                    <td>원</td>
+                    <td class="white_1">100</td>
+                    <td>평생</td>
+                    <td>LG</td>
+                    <td><a href="https://www.amobile.co.kr/plan/63064">링크</a></td>
+                
+                </tr>
+                <tr bgcolor ="#F6EDC3">
+                    <td>아이즈모바일</td>
+                    <td>[S]톨(300분/1GB)</td>
+                    <td>300</td>
+                    <td>100</td>
+                    <td>1</td>
+                    <td>GB</td>
+                    <td>2200</td>
+                    <td>원</td>
+                    <td>24</td>
+                    <td>개월</td>
+                    <td>SK</td>
+                    <td><a href="https://www.eyes.co.kr/payplan/info_view/158/C01">링크</a></td>
+                
+                </tr>
+                <tr bgcolor ="#CDFAD5">
+                    <td>아이즈모바일</td>
+                    <td>LTE 아이즈팡팡 (300분/2G)</td>
+                    <td>300</td>
+                    <td>100</td>
+                    <td>2</td>
+                    <td>GB</td>
+                    <td>2500</td>
+                    <td>원</td>
+                    <td class="white_1">100</td>
+                    <td>평생</td>
+                    <td>SK</td>
+                    <td><a href="https://www.eyes.co.kr/payplan/info_view/244/C01">링크</a></td>
+                
+                </tr>
+                <tr bgcolor ="#F6EDC3">
+                    <td>아이즈모바일</td>
+                    <td>[S]톨(100분/3GB)</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>3</td>
+                    <td>GB</td>
+                    <td>2700</td>
+                    <td>원</td>
+                    <td>24</td>
+                    <td>개월</td>
+                    <td>SK</td>
+                    <td><a href="https://www.eyes.co.kr/payplan/info_view/162/C01">링크</a></td>
+                
+                </tr>
+                <tr bgcolor ="#CDFAD5">
+                    <td>스노우맨</td>
+                    <td>스노우맨 친구3GB</td>
+                    <td>150</td>
+                    <td>100</td>
+                    <td>3</td>
+                    <td>GB</td>
+                    <td>3410</td>
+                    <td>원</td>
+                    <td class="white_1">100</td>
+                    <td>평생</td>
+                    <td>KT</td>
+                    <td><a href="https://www.snowman.co.kr/portal/usim/usimChageSbsc?commCmpnDivCd=KT&chageProdSeq=10322&engtMons=00">링크</a></td>
+                
+                </tr>
+                <tr bgcolor ="#CDFAD5">
+                    <td>아이즈모바일</td>
+                    <td>LTE 아이즈팡팡 (200분/4G)</td>
+                    <td>200</td>
+                    <td>100</td>
+                    <td>4</td>
+                    <td>GB</td>
+                    <td>3500</td>
+                    <td>원</td>
+                    <td class="white_1">100</td>
+                    <td>평생</td>
+                    <td>SK</td>
+                    <td><a href="https://www.eyes.co.kr/payplan/info_view/95/C01">링크</a></td>
+                
+                </tr>
+                <tr bgcolor ="#F6EDC3">
+                    <td>티플러스</td>
+                    <td>티플 10GB(10GB/200분)</td>
+                    <td>200</td>
+                    <td>100</td>
+                    <td>10</td>
+                    <td>GB</td>
+                    <td>3550</td>
+                    <td>원</td>
+                    <td>12</td>
+                    <td>개월</td>
+                    <td>SK</td>
+                    <td><a href="https://www.tplusmobile.com/main/rate/plan_details?seq=D529BED897AA7426ED3F0CB41FF33C40A15235C0A6CE70639C108E4C51130DE16A34210771D03DB44470A7E3F489707A8F7A4758786F7EFA33671D8F12B3524B">링크</a></td>
+                
+                </tr>
+                <tr bgcolor ="#CDFAD5">
+                    <td>스노우맨</td>
+                    <td>스노우맨300분3GB</td>
+                    <td>300</td>
+                    <td>100</td>
+                    <td>3</td>
+                    <td>GB</td>
+                    <td>3850</td>
+                    <td>원</td>
+                    <td class="white_1">100</td>
+                    <td>평생</td>
+                    <td>KT</td>
+                    <td><a href="https://www.snowman.co.kr/portal/usim/usimChageSbsc?commCmpnDivCd=KT&chageProdSeq=10381&engtMons=00">링크</a></td>
+                
+                </tr>
+                <tr bgcolor ="#F6EDC3">
+                    <td>티플러스</td>
+                    <td>티플 10GB(10GB/300분)</td>
+                    <td>300</td>
+                    <td>100</td>
+                    <td>10</td>
+                    <td>GB</td>
+                    <td>3930</td>
+                    <td>원</td>
+                    <td>12</td>
+                    <td>개월</td>
+                    <td>SK</td>
+                    <td><a href="https://www.tplusmobile.com/main/rate/plan_details?seq=18D610678357B990E450D744279A1061DA49C0616363FA17EB2E54D57C203AE130FB870755E8C13EF975225701E373CD5C39C531747451056B452E2F786DCB35">링크</a></td>
+                
+                </tr>
+                <tr bgcolor ="#F6EDC3">
+                    <td>아이즈모바일</td>
+                    <td>아이즈 (10GB/100분)</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>10</td>
+                    <td>GB</td>
+                    <td>4000</td>
+                    <td>원</td>
+                    <td>12</td>
+                    <td>개월</td>
+                    <td>SK</td>
+                    <td><a href="https://www.eyes.co.kr/payplan/info_view/6/C01">링크</a></td>
+                
+                </tr>
+                <tr bgcolor ="#CDFAD5">
+                    <td>스마텔</td>
+                    <td>스마일플러스(500분+1GB)</td>
+                    <td>500</td>
+                    <td>100</td>
+                    <td>1</td>
+                    <td>GB</td>
+                    <td>4400</td>
+                    <td>원</td>
+                    <td class="white_1">100</td>
+                    <td>평생</td>
+                    <td>SK</td>
+                    <td><a href="https://www.smartelmall.com/sub/charge/recom_view_new.asp?charge_idx=587&telecom=SKT">링크</a></td>
+                
+                </tr>
+                <tr bgcolor ="#F6EDC3">
+                    <td>이지모바일</td>
+                    <td>12 오래쓰는 10GB+1</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>10</td>
+                    <td>GB+<br>1M</td>
+                    <td>4400</td>
+                    <td>원</td>
+                    <td>12</td>
+                    <td>개월</td>
+                    <td>LG</td>
+                    <td><a href="https://www.egmobile.co.kr/charge/view/OHdJTUV0UkN2YzVjUTEwRnY2UU5sdz09">링크</a></td>
+                
+                </tr>
+                <tr bgcolor ="#F6EDC3">
+                    <td>아이즈모바일</td>
+                    <td>아이즈포스트(500분/5G)</td>
+                    <td>500</td>
+                    <td>500</td>
+                    <td>5</td>
+                    <td>GB</td>
+                    <td>5000</td>
+                    <td>원</td>
+                    <td>24</td>
+                    <td>개월</td>
+                    <td>SK</td>
+                    <td><a href="https://www.eyes.co.kr/payplan/info_view/55/C01">링크</a></td>
+                
+                </tr>
+                    
+
+                
+                </tbody>
+            </table>
+        </td>
+    </tr>     
+
 <tr>
-    <th class="company1">통신사</th>
-    <th class="menu" scope="cols">요금제명</th>
-    <th class="data" scope="cols">데이터/통화/문자</th>
-    <th class="money" scope="cols">금액(원)</th>
-    <th class="month" scope="cols">할인기간</th>
-    <th class="company2" scope="cols">통신망</th>
-    <th class="etc" scope="cols">비고</th>
 
+    <td align="center">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/aBcHgqd61KI?si=xsuwIRMoq3gbEqsz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </td>
+    <td align="center">
+    <div class="empty">
+
+    </div>
+    <ins class="kakao_ad_area" style="display:none;"
+    data-ad-unit = "DAN-FTOfPCSnz0qpJfPq"
+    data-ad-width = "728"
+    data-ad-height = "90"></ins>
+    <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+    <div class="floating-button">
+    <span class="move-myWebSite">
+        <a class="myWebSite-btn" href="https://edding.kr/"></a>
+        </span>
+    <span class="move-youtube">
+        <a class="youtube-btn" href="https://www.youtube.com/channel/UCJELy6gvjAGj5qYKhRNASvg"></a>
+    </span>
+    <span class="share-kakaotalk">
+        <a class="kakaotalk-btn" href="javascript:;"></a>
+    </span>
+
+        <span class="move-top">
+            <a class="top-btn" href=#></a>
+        </span>
+
+    </div>
+    </td>
 </tr>
-</thead>
-<tbody>
-    <tr bgcolor ="#F6EDC3">
-        <td>핀다이렉트</td>
-        <td>핀다이렉트Z Max</td>
-        <td>매일5GB+5Mbps</td>
-        <td>18700원</td>
-        <td>4개월</td>
-        <td>KT</td>
-        <td><a href="https://www.pindirectshop.com/plan/DEALV2ZMAX7">링크</a></td>
-    
-    </tr>
-    <tr bgcolor ="#F6EDC3">
-        <td>KG모바일</td>
-        <td>[모빌카드 스페셜]통화,데이터 마음대로 Pro</td>
-        <td>매일5GB+5Mbps</td>
-        <td>19250원</td>
-        <td>4개월</td>
-        <td>LG</td>
-        <td><a href="https://www.kgmobile.co.kr/plan/26">링크</a></td>
-    
-    </tr>
-    <tr bgcolor ="#F6EDC3">
-        <td>미니게이트</td>
-        <td>[모요only] 미니 LTE 일 5GB+</td>
-        <td>매일5GB+5Mbps</td>
-        <td>19800원</td>
-        <td>4개월</td>
-        <td>KT</td>
-        <td><a href="https://www.moyoplan.com/plans/15388">모요에서 <br>개통가능</a></td>
-    
-    </tr>
 
-    <tr bgcolor ="#EEEEEE">
-        <td>이지모바일</td>
-        <td>EG ON 비디오</td>
-        <td>100GB+5Mbps</td>
-        <td>21550원</td>
-        <td>4개월</td>
-        <td>KT</td>
-        <td><a href="https://egmobile.co.kr/charge/view/em5NQWZ2Y3VTM052Wm15Ri8vTEcrZz09">링크</a></td>
     
-    </tr>
-    <tr bgcolor ="#EEEEEE">
-        <td>아이즈모바일</td>
-        <td>[K]무한100GB+ 밀리의서재</td>
-        <td>100GB+5Mbps</td>
-        <td>22000원</td>
-        <td>5개월</td>
-        <td>LG</td>
-        <td><a href="https://www.eyes.co.kr/payplan/info_view/278/C01/EVD0759">링크</a></td>
-    
-    </tr>
-    <tr bgcolor ="#EEEEEE">
-        <td>모나</td>
-        <td>모나데이터매일5G안심5</td>
-        <td>매일5GB+5Mbps</td>
-        <td>22000원</td>
-        <td>6개월</td>
-        <td>LG</td>
-        <td><a href="https://mobilemona.co.kr/view/plan/rate_detail.aspx?gdcd=LPZ0018433">링크</a></td>
-    
-    </tr>
-    <tr bgcolor ="#EEEEEE">
-        <td>아이즈모바일</td>
-        <td>[K]매일5GB+</td>
-        <td>매일5GB+5Mbps</td>
-        <td>22200원</td>
-        <td>5개월</td>
-        <td>LG</td>
-        <td><a href="https://www.eyes.co.kr/payplan/info_view/240/C01/EVD0759">링크</a></td>
-    
-    </tr>
-    <tr bgcolor ="#EEEEEE">
-        <td>KG모바일</td>
-        <td>[모빌카드 스페셜]통화,데이터 마음대로 Pro</td>
-        <td>매일5GB+5Mbps</td>
-        <td>23100원</td>
-        <td>7개월</td>
-        <td>LG</td>
-        <td><a href="https://www.kgmobile.co.kr/plan/34">링크</a></td>
-    
-    </tr>
-    <tr bgcolor ="#EEEEEE">
-        <td>스노우맨</td>
-        <td>스노우맨 일5GB+5Mbps</td>
-        <td>매일5GB+5Mbps</td>
-        <td>24200원</td>
-        <td>7개월</td>
-        <td>KT</td>
-        <td></td>
-    
-    </tr>
-    <tr bgcolor ="#EEEEEE">
-        <td>프리티</td>
-        <td>프리티데이터팡팡100G+</td>
-        <td>매일5GB+5Mbps</td>
-        <td>24400원</td>
-        <td>7개월</td>
-        <td>SK</td>
-        <td></td>
-    
-    </tr>
-    <tr bgcolor ="#EEEEEE">
-        <td>A모바일</td>
-        <td>A 데이터 ON 비디오</td>
-        <td>100GB+5Mbps</td>
-        <td>28300원</td>
-        <td>4개월</td>
-        <td>KT</td>
-        <td></td>
-    
-    </tr>
-
-</tbody>
 </table>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/aBcHgqd61KI?si=xsuwIRMoq3gbEqsz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-        <div class="empty">
-
-        </div>
-        <ins class="kakao_ad_area" style="display:none;"
-        data-ad-unit = "DAN-FTOfPCSnz0qpJfPq"
-        data-ad-width = "728"
-        data-ad-height = "90"></ins>
-        <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
-        <div class="floating-button">
-        <span class="move-myWebSite">
-            <a class="myWebSite-btn" href="https://edding.kr/"></a>
-         </span>
-        <span class="move-youtube">
-           <a class="youtube-btn" href="https://www.youtube.com/channel/UCJELy6gvjAGj5qYKhRNASvg"></a>
-        </span>
-        <span class="share-kakaotalk">
-            <a class="kakaotalk-btn" href="javascript:;"></a>
-        </span>
-
-         <span class="move-top">
-             <a class="top-btn" href=#></a>
-         </span>
- 
-     </div>
 </body>
 </html>
